@@ -1,0 +1,100 @@
+.select-menu {
+    position: relative;
+    user-select: none;
+}
+
+.select-menu__btn,
+.select-menu_options-container,
+.select-menu_option {
+    box-shadow: 0 4px 25px 0 hsla(224, 76%, 48%, 0.05);
+}
+
+.select-menu__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    gap: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1d4ed8;
+    background-color: #fff;
+    padding: 0px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.select-menu--open .select-menu__btn {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 0px;
+}
+
+.select-menu__btn .label {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    max-width: calc(100% - 50px);
+    text-wrap: nowrap;
+}
+
+.select-menu__btn .label::-webkit-scrollbar {
+    display: none;
+}
+
+.select-menu_options-container {
+    overflow: hidden;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 0 0 16px 16px;
+    z-index: 5;
+}
+
+.select-menu_options {
+    overflow: auto;
+    max-height: 700px;
+    list-style: none;
+}
+
+.select-menu_option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    color: #0b0b0b;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 22px 18px;
+    cursor: pointer;
+}
+
+.select-menu_option:hover,
+.select-menu_option--active {
+    background-color: #edf2ff;
+    color: #1d4ed8;
+    box-shadow: none;
+    border-bottom-color: #edf2ff !important;
+}
+
+.select-menu_option:not(:last-child) {
+    border-bottom: 1px solid #ececec;
+}
+
+.select-menu_option:not(:last-child):has(+ .select-menu_option--active, + .select-menu_option:hover) {
+    border-bottom-color: #edf2ff;
+}
+
+.select-menu_option .placement {
+    background-color: #f8f8f8;
+    border-radius: 16px;
+    padding: 2px 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.select-menu_option:hover .placement,
+.select-menu_option--active .placement {
+    background-color: #d1ddff;
+}

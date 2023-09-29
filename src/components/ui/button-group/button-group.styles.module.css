@@ -1,0 +1,31 @@
+.button-group {
+    display: flex;
+    height: 40px;
+}
+
+.button-group > button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #1d5ecd;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button-group > button:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.button-group > button:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.button-group > button:not(:last-child) {
+    border-right: 1px solid #fff;
+}

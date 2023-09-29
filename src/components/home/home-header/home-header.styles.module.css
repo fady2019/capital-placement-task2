@@ -1,0 +1,56 @@
+.home-header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-areas: 'left left right right right right right';
+    column-gap: 64px;
+}
+
+.home-header__left {
+    grid-area: left;
+}
+
+.home-header__left .title {
+    font-size: 20px;
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+.home-header__left .city {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.home-header__right,
+.home-header__actions {
+    display: flex;
+}
+
+.home-header__right {
+    grid-area: right;
+    justify-content: space-between;
+    align-items: self-start;
+    gap: 86px;
+}
+
+.home-header__select-menu {
+    width: 320px;
+}
+
+.home-header__actions {
+    gap: 12px;
+}
+
+.home-header__actions li:not(.interview-btn) button {
+    color: #444444;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ececec;
+}
+
+.home-header__actions .separator {
+    width: 1px;
+    background: #eeeeee;
+    margin: 8px 0;
+}

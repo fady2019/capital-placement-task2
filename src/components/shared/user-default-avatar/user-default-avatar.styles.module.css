@@ -1,0 +1,14 @@
+.default-avatar {
+    width: var(--ava-size);
+    height: var(--ava-size);
+    color: #b1cdfd;
+    background-color: #d7e5fd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: calc(var(--ava-size) * 0.4);
+    user-select: none;
+    cursor: pointer;
+}

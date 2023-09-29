@@ -1,0 +1,8 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-areas:
+        'header header header header header header header'
+        'filters filters result result result result result';
+    gap: 24px 64px;
+}

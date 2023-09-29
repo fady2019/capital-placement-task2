@@ -1,0 +1,43 @@
+.sidebar,
+.top-icons,
+.bottom-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    gap: 32px;
+    background-color: #fff;
+    padding: 24px 12px;
+    box-shadow: 0 4px 23px 0 hsla(0, 0%, 0%, 0.05);
+}
+
+.top-icons,
+.bottom-icons {
+    gap: 12px;
+}
+
+.bottom-icons {
+    margin-top: auto;
+}
+
+.top-icons button,
+.bottom-icons button {
+    padding: 12px;
+    color: #0b0b0b;
+    border-radius: 8px;
+}
+
+.top-icons button:hover,
+.top-icons button.active,
+.bottom-icons button:hover,
+.bottom-icons button.active {
+    background-color: #e9efff;
+    color: #1d4ed8;
+}

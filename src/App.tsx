@@ -1,9 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import Sidebar from './components/layout/sidebar/sidebar.component';
+import Home from './components/home/home.component';
+
 import './App.css';
 
 function App() {
-    return <div className="App"></div>;
+    return (
+        <>
+            <Sidebar />
+
+            <main className="app-main">
+                <Home />
+            </main>
+        </>
+    );
 }
 
 export default App;

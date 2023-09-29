@@ -1,0 +1,60 @@
+.candidate-list__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+
+.candidate-list__header .left,
+.candidate-list__header .right {
+    display: flex;
+}
+
+.candidate-list__header .left {
+    gap: 32px;
+}
+
+.candidate-list__header .left h3 {
+    color: #1d4ed8;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.candidate-list__header .right {
+    gap: 22px;
+}
+
+.candidate-list__header .right li {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.candidate-list__header .right li:hover,
+.candidate-list__header .right li.active {
+    color: #1d4ed8;
+}
+
+.candidate-list__header .right li span {
+    display: inline-block;
+    text-align: center;
+    font-size: 10px;
+    background-color: #f7f8fd;
+    padding: 4px;
+    border-radius: 50%;
+    margin-left: 8px;
+    width: 22px;
+    aspect-ratio: 1 / 1;
+}
+
+.candidate-list__header .right li:hover span,
+.candidate-list__header .right li.active span {
+    background-color: #d1ddff;
+}
+
+.candidate-list__header .right .separator {
+    width: 2px;
+    background-color: #f3f3f4;
+    margin-block: 4px;
+}

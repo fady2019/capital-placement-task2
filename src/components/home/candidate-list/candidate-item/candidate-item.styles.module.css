@@ -1,0 +1,71 @@
+.candidate-item-container,
+.candidate-item {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.candidate-item-container {
+    padding-block: 18px;
+    border-top: 1px solid #eeeeee;
+}
+
+.candidate-item__info .candidate-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.candidate-item__info .candidate-location,
+.candidate-item__info .candidate-education {
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.candidate-item__info .candidate-location {
+    font-weight: 500;
+}
+
+.candidate-item__info .candidate-education {
+    font-weight: 400;
+}
+
+.candidate-item .hash-tags,
+.candidate-item .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 8px 0;
+    font-size: 11px;
+}
+
+.candidate-item .hash-tags span {
+    color: #1d4ed8;
+}
+
+.candidate-item .tags span {
+    background-color: #f3fafc;
+    color: #037092;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+.candidate-extra {
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px;
+    margin: 8px 16px 0 auto;
+}
+
+.candidate-extra span {
+    display: flex;
+    gap: 4px;
+    font-size: 11px;
+    color: #305dc6;
+    background-color: #e3ebff;
+    padding: 4px 12px;
+    border-radius: 16px;
+}

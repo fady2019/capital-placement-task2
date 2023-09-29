@@ -1,0 +1,6 @@
+.candidate-list-section {
+    grid-area: result;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 16px;
+}

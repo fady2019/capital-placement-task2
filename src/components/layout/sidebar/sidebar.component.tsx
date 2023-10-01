@@ -29,7 +29,9 @@ const TOP_ICONS = [
 const Sidebar = () => {
     return (
         <aside className={classes['sidebar']}>
-            <LogoIcon />
+            <div>
+                <LogoIcon />
+            </div>
 
             <List className={classes['top-icons']}>
                 {TOP_ICONS.map(({ id, Icon, active }) => {

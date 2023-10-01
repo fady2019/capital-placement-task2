@@ -7,6 +7,9 @@
 }
 
 .sidebar {
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -16,6 +19,10 @@
     background-color: #fff;
     padding: 24px 12px;
     box-shadow: 0 4px 23px 0 hsla(0, 0%, 0%, 0.05);
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .top-icons,

@@ -1,5 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
+import Backdrop from '../backdrop/backdrop.component';
+
 import classes from './select-menu.styles.module.css';
 
 import { ReactComponent as ChevronDownIcon } from '../../../assets/icons/chevron_down.svg';
@@ -59,6 +61,8 @@ const SelectMenu: React.FC<{
                 <p className={classes['label']}>{selectMenuLabel}</p>
                 <ChevronDownIcon />
             </div>
+
+            <Backdrop show={isOpen} onClick={setIsOpen.bind(null, false)} />
 
             {isOpen && (
                 <div className={classes['select-menu_options-container']}>

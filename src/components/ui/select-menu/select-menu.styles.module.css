@@ -1,6 +1,7 @@
 .select-menu {
     position: relative;
     user-select: none;
+    z-index: 6;
 }
 
 .select-menu__btn,
@@ -49,7 +50,7 @@
     right: 0;
     background-color: #fff;
     border-radius: 0 0 16px 16px;
-    z-index: 5;
+    z-index: 7;
 }
 
 .select-menu_options {
